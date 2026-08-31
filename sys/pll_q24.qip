@@ -1,0 +1,6 @@
+# Quartus Prime 24 accepts the same generated Cyclone V PLL RTL/QIP files as
+# Quartus 17. MiSTer's sys.qip selects this filename from the tool major version.
+set_global_assignment -name QIP_FILE           rtl/pll.qip
+set_global_assignment -name QIP_FILE           [file join $::quartus(qip_path) pll_hdmi.qip ]
+set_global_assignment -name QIP_FILE           [file join $::quartus(qip_path) pll_audio.qip ]
+set_global_assignment -name QIP_FILE           [file join $::quartus(qip_path) pll_cfg.qip ]
